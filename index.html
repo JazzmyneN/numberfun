@@ -15,33 +15,37 @@
         <h2>Number Practice Site</h2>
     </header>
         <form>
-            First Number: <br />
-            <input required type="text" id="first"> <br />
-            Second Number: <br />
-            <input required type="text" id="second"> <br />
-            Third Number: <br />
-            <input required type="text" id="third"> <br />
-            Forth Number: <br />
-            <input required type="text" id="forth"> <br />
-            Fifth Number: <br />
-            <input required type="text" id="fifth"> <br />
-            Sixth Number: <br />
-            <input required type="text" id="sixth"> <br />
-
-            <br />
-            <p id="output"></p>
-            <br />
-
-            <button name="submit" type="button" onclick=sort()>Sort From Largest To Smallest</button>
-            <button name="submit" type="button" onclick=median()>Find Median</button>
-            <button name="submit" type="button" onclick=largest()>Find Largest Number</button>
-            <button name="submit" type="button" onclick=smallest()>Find Smallest Number</button>
-            <button name="submit" type="button" onclick=average()>Find Average of Set</button>
-            <button name="submit" type="button" onclick=mode()>Find Mode of Set</button>
-            <button name="submit" type="button" onclick=range()>Find Range of Set</button>
-            <button name="submit" type="button" onclick=unique()>Find All Unique Numbers</button>
-            <button name="submit" type="button" onclick=duplicate()>Find All Duplicate Numbers</button>
-
+            <div class = "inputs">
+                <div class = "inputContain">
+                    First Number: <br />
+                    <input required type="text" id="first"> <br />
+                    Second Number: <br />
+                    <input required type="text" id="second"> <br />
+                    Third Number: <br />
+                    <input required type="text" id="third"> <br />
+                    Forth Number: <br />
+                    <input required type="text" id="forth"> <br />
+                    Fifth Number: <br />
+                    <input required type="text" id="fifth"> <br />
+                    Sixth Number: <br />
+                    <input required type="text" id="sixth"> <br />
+                </div>
+            </div>
+                <div class = "outputContain">
+                    <p id="output" placeholder = "..."></p>
+                </div>
+            
+            <div class = "buttons">
+                <button name="submit" type="button" onclick=sort()>Sort From Largest To Smallest</button>
+                <button name="submit" type="button" onclick=median()>Find Median</button>
+                <button name="submit" type="button" onclick=largest()>Find Largest Number</button>
+                <button name="submit" type="button" onclick=smallest()>Find Smallest Number</button>
+                <button name="submit" type="button" onclick=average()>Find Average of Set</button>
+                <button name="submit" type="button" onclick=mode()>Find Mode of Set</button>
+                <button name="submit" type="button" onclick=range()>Find Range of Set</button>
+                <button name="submit" type="button" onclick=unique()>Find All Unique Numbers</button>
+                <button name="submit" type="button" onclick=duplicate()>Find All Duplicate Numbers</button>
+            </div>
         </form>
     </body>
 </html>
