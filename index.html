@@ -6,46 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Number Practice</title>
+    <link href="reset.css" rel="stylesheet" />
     <link href="index.css" rel="stylesheet" />
     <script src="index.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <h2>Number Practice Site</h2>
-    </header>
-        <form>
-            <div class = "inputs">
-                <div class = "inputContain">
-                    First Number: <br />
-                    <input required type="text" id="first"> <br />
-                    Second Number: <br />
-                    <input required type="text" id="second"> <br />
-                    Third Number: <br />
-                    <input required type="text" id="third"> <br />
-                    Forth Number: <br />
-                    <input required type="text" id="forth"> <br />
-                    Fifth Number: <br />
-                    <input required type="text" id="fifth"> <br />
-                    Sixth Number: <br />
-                    <input required type="text" id="sixth"> <br />
-                </div>
-            </div>
-                <div class = "outputContain">
-                    <p id="output" placeholder = "..."></p>
-                </div>
-            
-            <div class = "buttons">
-                <button name="submit" type="button" onclick=sort()>Sort From Largest To Smallest</button>
-                <button name="submit" type="button" onclick=median()>Find Median</button>
-                <button name="submit" type="button" onclick=largest()>Find Largest Number</button>
-                <button name="submit" type="button" onclick=smallest()>Find Smallest Number</button>
-                <button name="submit" type="button" onclick=average()>Find Average of Set</button>
-                <button name="submit" type="button" onclick=mode()>Find Mode of Set</button>
-                <button name="submit" type="button" onclick=range()>Find Range of Set</button>
-                <button name="submit" type="button" onclick=unique()>Find All Unique Numbers</button>
-                <button name="submit" type="button" onclick=duplicate()>Find All Duplicate Numbers</button>
-            </div>
-        </form>
-    </body>
+    <div class="leftSide">
+        <header>
+            <h2>Number Practice Site</h2>
+        </header>
+        <div class="buttons">
+            <button name="submit" type="button" onclick=sort()>Sort From Smallest To Largest</button>
+           
+            <button name="submit" type="button" onclick=largest()>Find Largest Number</button>
+            <button name="submit" type="button" onclick=smallest()>Find Smallest Number</button>
+            <button name="submit" type="button" onclick=average()>Find Average of Set</button> 
+            <button name="submit" type="button" onclick=median()>Find Median of Set</button>
+            <button name="submit" type="button" onclick=mode()>Find Mode of Set</button>
+            <button name="submit" type="button" onclick=range()>Find Range of Set</button>
+            <button name="submit" type="button" onclick=unique()>Find All Unique Numbers</button>
+            <button name="submit" type="button" onclick=duplicate()>Find All Duplicate Numbers</button>
+        </div>
+    </div>
+    <div class="rightSide">
+        <div class="inputs">
+            <label>First Number:</label>
+            <input required type="text" id="first">
+        </div>
+        <div class="inputs">
+            <label>Second Number:</label>
+            <input required type="text" id="second">
+        </div>
+        <div class="inputs">
+            <label>Third Number:</label>
+            <input required type="text" id="third">
+        </div>
+        <div class="inputs">
+            <label>Fourth Number:</label>
+            <input required type="text" id="fourth">
+        </div>
+        <div class="inputs">
+            <label>Fifth Number:</label>
+            <input required type="text" id="fifth">
+        </div>
+        <div class="inputs">
+            <label>Sixth Number:</label>
+            <input required type="text" id="sixth">
+        </div>
+        <div class="outputContain">
+            <p id="output" placeholder="..."></p>
+        </div>
+
+
+
+    </div>
+</body>
+
 </html>
