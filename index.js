@@ -504,7 +504,7 @@ function duplicate() {
     if (n6 > 1 && nu6 !== nu2 && nu6 !== nu3 && nu6 !== nu4 && nu6 !== nu5 && nu6 !== nu1) {
         output.innerHTML += nu6 +" repeats " + n6 + " times. </br>" ;
     }
-    else {
+    else if (n1 === 1 && n2 === 1 && n3 === 1 && n4 === 1 && n5 === 1&& n6 ===1 ) {
         output.innerHTML = "There are no duplicates";
     }
 }
